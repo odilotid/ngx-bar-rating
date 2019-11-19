@@ -55,7 +55,7 @@ const rollupUglify = require('rollup-plugin-uglify');
 const gulpSass = require('gulp-sass');
 
 
-const LIBRARY_NAME = 'ngx-bar-rating';
+const LIBRARY_NAME = 'ngx-bar-rating-odilo';
 
 const config = {
     allTs: 'src/**/!(*.spec).ts',
@@ -199,7 +199,7 @@ gulp.task('test:watch-no-cc', (cb) => {//no coverage (useful for debugging faili
 gulp.task('package', (cb) => {
     let pkgJson = JSON.parse(fs.readFileSync('./package.json', 'utf8'));
     let targetPkgJson = {};
-    let fieldsToCopy = ['version', 'description', 'keywords', 'author', 'repository', 'license', 'bugs', 'homepage'];
+    let fieldsToCopy = ['version', 'contributors', 'description', 'keywords', 'author', 'repository', 'license', 'bugs', 'homepage'];
 
     targetPkgJson['name'] = LIBRARY_NAME;
 
