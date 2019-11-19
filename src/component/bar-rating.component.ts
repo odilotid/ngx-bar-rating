@@ -84,8 +84,8 @@ export class BarRatingComponent implements OnInit, OnChanges, ControlValueAccess
     this.updateState(this.rate);
   }
 
-  update(newRate: number, internalChange = true): void {
-    if (!this.readOnly && !this.disabled && this.rate !== newRate) {
+  update(newRate: number, internalChange = true, force = false): void {
+    if (!this.readOnly && !this.disabled && (force || this.rate !== newRate)) {
       this.rate = newRate;
       this.rateChange.emit(this.rate);
     }
@@ -118,7 +118,7 @@ export class BarRatingComponent implements OnInit, OnChanges, ControlValueAccess
     /** (NOT TESTED) Remove 300ms click delay on touch devices */
     e.preventDefault();
     e.stopPropagation();
-    this.update(value + 1);
+    this.update(value + 1, true, true);
   }
 
   private handleEnter(index) {

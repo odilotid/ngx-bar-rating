@@ -1,14 +1,14 @@
 {
   "name": "ngx-bar-rating",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Angular Bar Rating",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:MurhafSousli/ngx-bar-rating.git"
+    "url": "git+ssh://git@github.com:odilotid/ngx-bar-rating.git"
   },
-  "homepage": "https://github.com/MurhafSousli/ngx-bar-rating#readme",
+  "homepage": "https://github.com/odilotid/ngx-bar-rating#readme",
   "bugs": {
-    "url": "https://github.com/MurhafSousli/ngx-bar-rating/issues"
+    "url": "https://github.com/odilotid/ngx-bar-rating/issues"
   },
   "keywords": [
     "bar-rating",
@@ -22,6 +22,9 @@
     "stars"
   ],
   "author": "Murhaf Sousli <murhafsousi@gmail.com>",
+  "contributors": [
+    "Roberto García Manzano <rgarcia@odilotid.es> (https://www.odilo.es/)"
+  ],
   "license": "MIT",
   "main": "./dist",
   "typings": "./dist",
